@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuc Tap</title>
+    <!-- font-icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- fontgg -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap" rel="stylesheet">
+    <!-- fontcss -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="loadslsp()">
+    <div id="cosmetics">
+        <div id="header">
+            <container>
+                <div id="nav">
+                    <div class="nav-top">
+                        <div class="nav-right">
+                            <div class="nav_account">
+                                <a href="./homekosmebox.html"><i class="icon_fz fa-sharp fa-solid fa-heart"></i>
+                                    <span>Về Kosmebox</span></a>
+                            </div>
+                            <div class="nav_account">
+                                <a href="./thuc-tap/dang-nhap/login.html"> <i class="icon_color fa-solid fa-user "></i>
+                                    <span>Đăng nhập</span></a>
+                            </div>
+                            <div class="nav_account">
+                                <a href="./thuc-tap/dang-ki/index.html">
+                                    <i class="icon_color fa-solid fa-right-from-bracket"></i>
+                                    <span> Đăng Kí</span>
+                                </a>
+                            </div>
+                            <div class="nav_account">
+                                <a href="./giohang.html"> <i class="icon_fz fa-solid fa-dollar-sign"></i>
+                                    <span>Thanh Toán</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </container>
+            <container>
+                <div class="nav_assets nav-top">
+                    <div class="nav_search">
+                        <div class="nav_logo">
+                            <a href="./home.html"> <img width="205" height="80"
+                                    src="https://www.kosmebox.com/image/cache/data/Logo%20/logonew20191-454x177.jpg"
+                                    alt="kosmebox"></a>
+                        </div>
+                        <div class="nav_input">
+                            <input class="input_text" type="text" placeholder="Tìm kiếm...">
+                            <i class="icon_search fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="nav_beautify">
+                            <div class="nav_gap">
+                                <div class="nav_flex">
+                                    <div class="beautify_logo">
+                                        <img src="https://www.kosmebox.com/images/homepage_21.png" alt="">
+                                    </div>
+                                    <div class="beautify_text">
+                                        <span>Bí quyết làm đẹp</span>
+                                    </div>
+                                </div>
+                                <div class="nav_flex">
+                                    <div class="beautify_logo">
+                                        <img src="	https://www.kosmebox.com/images/homepage_18.png" alt="">
+                                    </div>
+                                    <div class="beautify_text">
+                                        <span>Tuyển CTV</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_cart">
+                                <div onclick="showCart()">
+                                    <i class=" icon_color icon_color-fz fa-solid fa-cart-shopping"></i>
+                                    <div id="cart_number">0</div>
+                                </div>
+                                <div id="cart_sp">
+                                    <ul class="cart_sp-content">
+                                        <li class="cart_sp-content--li">
+                                            <table class="cart_tb">
+                                                <tbody>
+                                                    <!-- <div class="scroll"> -->
+                                                    <span class="no_sp">Không có sản phẩm trong giỏ hàng!</span>
+                                                    <!-- <tr>
+                                                        <td>
+                                                            <img src="http://127.0.0.1:5500/thuctapdoan2023/img2/Bo-San-Pham-Duong-da-chong-lao-hoa-face-shop-YEHWADAM-HWANSAENGGO-CREAM-1-100x100.jpg"
+                                                                alt="">
+                                                        </td>
+                                                        <td class="text_title"><span>Bộ Dưỡng Da Chống Lão Hóa
+                                                                The Face Shop Yehwadam Hwansaenggo Cream Gift
+                                                                Set</span>
+                                                        </td>
+                                                        <td class="number_sp-x">
+                                                            <span>x</span> <span class="quantity">0</span>
+                                                        </td>
+                                                        <td class="text_price">
+                                                            <span>1,779,000 đ</span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="icon_remove fa-solid fa-circle-xmark"></i>
+                                                        </td>
+                                                    </tr> -->
+                                                    <!-- </div> -->
+
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <table id="total_btn">
+                                                <div class="cart_total">
+                                                    <!-- <p>
+                                                        <span>Thành tiền</span>
+                                                        <span class="total_price">0</span><span>đ</span>
+                                                    </p>
+                                                    <p>
+                                                        <span>Tổng cộng</span>
+                                                        <span class="total_price">0</span><span>đ</span>
+                                                    </p> -->
+                                                </div>
+                                                <div class="btn_tr">
+                                                    <!-- <button class="btn_view btn_cart">XEM GIỎ HÀNG</button>
+                                                    <a href="./giohang.html"><button class="btn_tt btn_cart">THANH
+                                                            TOÁN</button></a> -->
+                                                </div>
+                                            </table>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </container>
+            <container>
+                <div class="nav_menu">
+                    <div class="nav_menu-list">
+                        <div class="ulli_list nav-top">
+                            <ul class="ul_list">
+                                <li><a href="./home.html"><i class="icon_menu fa-sharp fa-solid fa-house"></i></a></li>
+                                <li class="li_makeup slide_items">
+                                    <span>THƯỢNG HIỆU</span>
+                                    <ul class="ul_hover slide_down">
+                                        <ul class="img_trademark">
+                                            <ul class="img_items">
+                                                <h3>Các Thương Hiệu Tiêu Biểu</h3>
+                                                <ul class="img_block">
+                                                    <li><img width="100px" height="100px"
+                                                            src="	https://www.kosmebox.com/image/data/Brand-Logo/the-face-shop.jpg"
+                                                            alt=""></li>
+                                                    <li><img width="100px" height="100px"
+                                                            src="	https://www.kosmebox.com/image/data/Brand-Logo/innisfree.jpg"
+                                                            alt=""></li>
+                                                    <li><img width="100px" height="100px"
+                                                            src="	https://www.kosmebox.com/image/data/Brand-Logo/etude-house.jpg"
+                                                            alt=""></li>
+                                                </ul>
+                                                <ul class="img_block">
+                                                    <li><img width="100px" height="100px"
+                                                            src="https://www.kosmebox.com/image/data/Brand-Logo/missha.jpg"
+                                                            alt=""></li>
+                                                    <li><img width="191px" height="98px"
+                                                            src="	https://www.kosmebox.com/image/data/Brand-Logo/lime.jpg "
+                                                            alt=""></li>
+                                                    <li><img width="100px" height="100px"
+                                                            src="	https://www.kosmebox.com/image/data/Brand-Logo/tony-moly.jpg"
+                                                            alt=""></li>
+                                                </ul>
+                                                <ul class="img_block">
+                                                    <li><img width="100px" height="100px"
+                                                            src="	https://www.kosmebox.com/image/data/Brand-Logo/laneige-logo.jpg"
+                                                            alt=""></li>
+                                                    <li><img width="100px" height="100px"
+                                                            src="	https://www.kosmebox.com/image/data/Brand-Logo/secret-key-logo2.jpg"
+                                                            alt=""></li>
+                                                    <li><img width="100px" height="100px"
+                                                            src="	https://www.kosmebox.com/image/data/INNISFREE/Superliftingcurlcara/3ce-logo-1.jpg"
+                                                            alt=""></li>
+                                                </ul>
+                                                <ul class="img_block">
+                                                    <li><img width="142px" height="95px"
+                                                            src="https://www.kosmebox.com/image/data/INNISFREE/Superliftingcurlcara/aritaum-logo.png"
+                                                            alt=""></li>
+                                                    <li><img width="258px" height="95px"
+                                                            src="	https://www.kosmebox.com/image/data/Brand-Logo/enesti.jpg"
+                                                            alt=""></li>
+                                                    <li><img width="258pxpx" height="95px"
+                                                            src="https://www.kosmebox.com/image/data/Brand-Logo/faceinc-logo.jpg"
+                                                            alt=""></li>
+                                                </ul>
+                                            </ul>
+
+                                            <ul class="item_flex">
+                                                <ul class="items_hv items_text-fl">
+                                                    <li class="li_h3">
+                                                        <h3>A-F</h3>
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>3CE</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>ARITAUM</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Etude House
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> Camiane
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> Doctorslab</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> Dr.Haiian</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> Dr.Skin</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>13Month</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>16 Brand</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>18 Herbs Organics
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>3D</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>3PCS</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>82X</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>8Solution</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>95Problem</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Absolute Organic
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Agapan</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AHC</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Àla Mode Paris
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Alleeni </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AloHa</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Ample:n</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Anessa</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Angel Liquid</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AngelLooka </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Anjo </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Antiphlamine
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Apal </li>
+                                                    <li class="see_more"><i
+                                                            class="icon_pd fa-solid fa-angle-right"></i>Xem Thêm...
+                                                    </li>
+                                                </ul>
+                                                <ul class="items_hv items_text-fl">
+                                                    <li class="li_h3">
+                                                        <h3>G-I</h3>
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Innisfree</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>G9 Skin</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Garnier
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> Genie
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> Geo Lamy</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> GetNewSkin</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> Giinsu</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Giorgio Armani
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>GOLD MYJIN</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Golden Cocoon
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Goodal</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Guerisson</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Hajiwon</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Handok</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Hanyul</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Happy Bath
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Harana</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Hatomugi</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Head & Shoulders
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Hello Kitty </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AloHa</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Ample:n</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Anessa</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Angel Liquid</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AngelLooka </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Anjo </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Antiphlamine
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Apal </li>
+                                                    <li class="see_more"><i
+                                                            class="icon_pd fa-solid fa-angle-right"></i>Xem Thêm...
+                                                    </li>
+                                                </ul>
+                                                <ul class="items_hv items_text-fl">
+                                                    <li class="li_h3">
+                                                        <h3>J-R</h3>
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Laneige</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Missha</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Palmers
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> PERIPERA
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> PERIPERA</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>10mgrx</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Bywishtrend</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>I'm From</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>I'M Meme</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Isehan
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Jil Gyung Yi</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>3PCS</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>82X</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>8Solution</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>95Problem</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Absolute Organic
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Agapan</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AHC</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Àla Mode Paris
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Alleeni </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AloHa</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Ample:n</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Anessa</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Angel Liquid</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AngelLooka </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Anjo </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Antiphlamine
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Apal </li>
+                                                    <li class="see_more"><i
+                                                            class="icon_pd fa-solid fa-angle-right"></i>Xem Thêm...
+                                                    </li>
+                                                </ul>
+                                                <ul class="items_hv items_text-fl">
+                                                    <li class="li_h3">
+                                                        <h3>S-Z</h3>
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Secret Key</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>SkinFood</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>THE FACE SHOP
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> TonyMoly
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> Victoria Beauty
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> Son & Park</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i> VANT 36.5</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>2VaVa</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Sakura</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Salua
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Scion</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>SEATREE ART</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Secret</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>8Solution</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>95Problem</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Absolute Organic
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Agapan</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AHC</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Àla Mode Paris
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Alleeni </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AloHa</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Ample:n</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Anessa</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Angel Liquid</li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>AngelLooka </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Anjo </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Antiphlamine
+                                                    </li>
+                                                    <li><i class="icon_pd fa-solid fa-angle-right"></i>Apal </li>
+                                                    <li class="see_more"><i
+                                                            class="icon_pd fa-solid fa-angle-right"></i>Xem Thêm...
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li class="li_makeup slide_items2">
+                                    <span>TRANG ĐIỂM </span>
+                                    <ul class="ul_hover slide_down2">
+                                        <ul class="item_flex">
+                                            <ul class="items_hv">
+                                                <li class="li_h3">
+                                                    <h3>Trang Điểm Mắt - Eye Makeup</h3>
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kem Lót Mắt</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Phấn Mắt</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Chì Kẻ Mày - Kẻ Mắt
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Mascara - Fixer</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Dưỡng Dài Mi</li>
+                                            </ul>
+                                            <ul class="items_hv">
+                                                <li class="li_h3">
+                                                    <h3>Trang Điểm Mặt - Face Makeup</h3>
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Phấn Nước - Kem Lót -
+                                                    Phấn Nền - Kem Nền</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Phấn Phủ - Phấn Nén
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kem BB - CC</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kem Che Khuyết Điểm
+                                                    Mặt - Face</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Má Hồng Blusher</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Phấn Tạo Khối -
+                                                    Highlighter</li>
+                                            </ul>
+                                            <ul class="items_hv">
+                                                <li class="li_h3">
+                                                    <h3 class="item_lip">Trang Điểm Môi - Son Môi - Lipstick Makeup</h3>
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Son Thỏi - Lipstick
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Son Lì - Son Xăm -
+                                                    Son Bóng</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Son Kem - Son Tint
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Son Dưỡng Môi - Tẩy
+                                                    Da Chết Môi</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kẻ Viền Môi</li>
+                                            </ul>
+                                            <ul class="items_hv">
+                                                <li class="li_h3">
+                                                    <h3>Dụng Cụ Trang Điểm</h3>
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Cọ - Mút - Kẹp Mi
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li class="li_makeup slide_items3">
+                                    <span>DƯỠNG DA </span>
+                                    <ul class="ul_hover slide_down3 ">
+                                        <ul class="item_flex">
+                                            <ul class="items_hv">
+                                                <li class="li_h3">
+                                                    <h3>Các Vấn Đề Của Da</h3>
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kem Trị Mụn</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Dưỡng Trắng - Trị
+                                                    Thâm Nám</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Se Khít Lỗ Chân Lông
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Chống Nhăn - Chống
+                                                    Lão Hoá Da</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Dưỡng Ẩm Sâu</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Dưỡng Cho Da Nhạy Cảm
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Dưỡng Cho Da Hỗn Hợp
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Dưỡng Cho Da Dầu</li>
+                                            </ul>
+                                            <ul class="items_hv">
+                                                <li class="li_h3">
+                                                    <h3>Các Bước Dưỡng Da</h3>
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Tẩy Trang</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Sữa Rửa Mặt - Face
+                                                    Wash</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Tẩy Tế Bào Chết Da
+                                                    Mặt - Face Scrub</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Mặt Nạ - Mặt Nạ Ngủ -
+                                                    Mask - Mátxa Mặt</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Nước Hoa Hồng - Toner
+                                                    Cân Bằng</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Sữa Dưỡng -
+                                                    Lotion/Emulsion</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Serum, Essence, Tinh
+                                                    Chất Dưỡng Da</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kem Dưỡng Mắt</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kem Dưỡng Da</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Xịt Khoáng - Mist
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kem Chống Nắng</li>
+                                            </ul>
+                                            <ul class="items_hv">
+                                                <li class="li_h3">
+                                                    <h3 class="item_lip">Dưỡng Thể</h3>
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i> Dưỡng Tay Hand Care
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Sữa Dưỡng Thể Body
+                                                    Lotion</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Sữa Tắm Body Wash
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i> Kem Dưỡng Body</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kem Chống Nắng Body
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Tẩy Da Chết Toàn Thân
+                                                    Body</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Kem Tẩy Lông</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Dụng Cụ Vệ Sinh Da
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Thực Phẩm Chức Năng
+                                                </li>
+                                            </ul>
+                                            <ul class="items_hv">
+                                                <li class="li_h3">
+                                                    <h3>Dưỡng Tóc</h3>
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Tinh Chất Dưỡng Tóc -
+                                                    Nuôi Dưỡng Tóc</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Trị Gàu - Làm Sạch Da
+                                                    Đầu</li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Ủ Tóc - Nhuộm Tóc
+                                                </li>
+                                                <li><i class="icon_pd fa-solid fa-angle-right"></i>Dưỡng Mi</li>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li>BỘ SẢN PHẨM</li>
+                                <li>NƯỚC HOA</li>
+                                <li>DÙNG THỬ</li>
+                                <li>HỘP QUÀ KOS</li>
+                                <li class=" li_list"><i class=" icon_menu icon_menu-color fa-solid fa-thumbs-up"></i>
+                                    TOP REVIEW</li>
+                                <li class="instruct">
+                                    <span>HƯỚNG DẪN</span>
+                                    <ul class="instruct_ul">
+                                        <li class="instruct_">Hướng Dẫn Mua Hàng</li>
+                                        <li>Chính Sách Giao Hàng</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </container>
+        </div>
+        <!--end header-->
+
+
+        <div id="container">
+            <div class="container_content">
+                <div id="column-left">
+                    <div class="joural-lotion">
+                        <div class="lotion-title">DƯỠNG DA</div>
+                        <div class="lotion-list">
+                            <ul>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Tẩy Trang</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Sữa Rửa Mặt</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Tẩy Tế Bào Chết</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Mạt Nạ Mask-Matxa
+                                        Mặt</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Nước Hoa Hồng</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Sữa Dưỡng</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Tinh Chất</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kem Dưỡng Mắt</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kem Dưỡng Da</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Xịt Khoáng Mist</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kem chống Nắng</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Đặc Trị Mụn</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Dưỡng Nắng - Trị Thâm
+                                        Nám</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Se Khít Lỗ Chân
+                                        Lông</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Chống Não Hóa</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Dưỡng Ẩm Sâu</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Dưỡng Da Nhạy Cảm</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Dưỡng Tay</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Sữa Dưỡng Thể</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Sữa Tắm Body</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kem Dưỡng Body</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kem Chống Nắng
+                                        Body</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Tẩy Da Chết Body</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kem Tẩy Lông</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Dụng Cụ Vệ Sinh
+                                        Da</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Tẩy Trang</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="joural-lotion">
+                        <div class="lotion-title">Trang Điểm</div>
+
+                        <div class="lotion-list">
+                            <ul>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kẻ Mày - Kẻ Mắt</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kem Lót Mắt</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Phấn Mắt</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Mascara - Fixer</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Dưỡng Mi</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Son Môi</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Son Thỏi</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Son Lì - Son Bóng</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Son Kem - Son
+                                        Tint</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Son Dưỡng - Tẩy Môi
+                                        Chết</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kẻ Viền Môi</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kem Lót - Phấn/Kem
+                                        Nền</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Phấn Phủ - Phấn
+                                        Nén</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Kem BB - CC</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Che Khuyết Điểm</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Má Hồng Blusher</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Phấn Tạo Khối -
+                                        Highlighter</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Dụng Cụ Trang
+                                        Điểm</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Cọ - Mút - Kẹp Mi</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Sơn Móng Tay</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Đặc Trị Mụn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="joural-lotion">
+                        <div class="lotion-title">DƯỠNG Tóc</div>
+                        <div class="lotion-list">
+                            <ul>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Tinh Chất Dưỡng
+                                        Tóc</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Trị Gàu - Làm Sạch Da
+                                        Đầu</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Ủ Tóc - Nhuộm Tóc</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="joural-lotion">
+                        <div class="lotion-title">Thương Hiệu</div>
+                        <div class="lotion-list">
+                            <ul>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Missha</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> ELF</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Etude House</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Innisfree</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Laneige</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Skinfood</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> The Face Shop</a>
+                                </li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Tony - Moly</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> 3CE</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Secret Key</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> The Face Inc</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Apieu</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Peripera</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Aloha</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Bano</a></li>
+                                <li><a href="#"><i class="icon_right fa-solid fa-angle-right"></i> Aritaum</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="joural-lotion">
+                        <div class="lotion-title">HÀNG MỚI VỀ</div>
+                        <div class="product-list">
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="">
+
+                                    <div class="product-item-content">
+                                        <span>Kem Dưỡng Ẩm Làm Dịu Da The Face Shop Yehwadam Artemisia Soothing
+                                            Moisturizing</span>
+                                        <p>999,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/4-100x100 (3).png">
+
+                                    <div class="product-item-content">
+                                        <span>Tẩy Tế Bào Chết Mặt Với Hạt Cà Phê Và Bơ Cacao Cocoon Dak Lak Coffee Face
+                                            Polish 150ML</span>
+                                        <p>145,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/4-100x100 (2).png">
+
+                                    <div class="product-item-content">
+                                        <span>Mặt Nạ Nghệ Hưng Yên Cocoon Turmeric Face Mask 30ML</span>
+                                        <p>145,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/4-100x100 (1).png">
+
+                                    <div class="product-item-content">
+                                        <span>Nước Hoa Hồng Cấp Ẩm Và Làm Mềm Da Cocoon Rose Water Toner 140ML</span>
+                                        <p>175,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/2-100x100.png">
+
+                                    <div class="product-item-content">
+                                        <span>Mặt Nạ Bí Đao Giảm Dầu Và Mụn Cocoon 30ML</span>
+                                        <p>115,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/1-100x100.png">
+
+                                    <div class="product-item-content">
+                                        <span>Dung Dịch Chấm Mụn Chiết Xuất Bí Đao Cocoon 5ML</span>
+                                        <p>125,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/Artboard_27_848de0dfb6-100x100.jpg">
+
+                                    <div class="product-item-content">
+                                        <span>Nước Tẩy Trang Bí Đao Làm Sạch Dịu Nhẹ Cocoon Winter Melon Micellar Water
+                                            500ML</span>
+                                        <p>275,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/1-100x100 (1).png">
+
+                                    <div class="product-item-content">
+                                        <span>Nước Tẩy Trang Hoa Hông Cấp Ẩm Cocoon Rose Micellar Water 500ML</span>
+                                        <p>275,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/4-100x100 (3).png">
+
+                                    <div class="product-item-content">
+                                        <span>Tẩy Tế Bào Chết Mặt Với Hạt Cà Phê Và Bơ Cacao Cocoon Dak Lak Coffee Face
+                                            Polish 150ML</span>
+                                        <p>145,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/nuoc-duong-toc-tinh-dau-buoi-cocoon (1)-100x100.jpg">
+
+                                    <div class="product-item-content">
+                                        <span>Nước Dưỡng Tóc Tinh Dầu Bưởi Giảm Gãy Rụng Và Làm Mềm Tóc Cocoon Pomelo
+                                            Hair
+                                            Tonic 140ML</span>
+                                        <p>145,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="joural-lotion">
+                        <div class="lotion-title">SẢN PHẨM ĐÃ XEM</div>
+                        <div class="product-list">
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/st-ives-gentle-smoothing-oatmeal-scrub-and-mask6-100x100.jpg">
+
+                                    <div class="product-item-content">
+                                        <span>Bộ Dưỡng Da Chống Lão Hóa The Face Shop Yehwadam Hwansaenggo Cream Gift
+                                            Set</span>
+                                        <p>1,779,00 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/green-tea-seed-serum-13-100x100.jpg">
+
+                                    <div class="product-item-content">
+                                        <span>Kem Dưỡng Ẩm Làm Dịu Da The Face Shop Yehwadam Artemisia Soothing
+                                            Moisturizing</span>
+                                        <p>999,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div>
+
+                            <div class="product-item">
+                                <a href="#">
+                                    <img
+                                        src="./img2/che-khuyet-diem-moi-mat-va-mat-the-face-shop-concealer-dual-veil-trolls-8-1g-5-100x100.jpg">
+
+                                    <div class="product-item-content">
+                                        <span>Mặt Nạ Giấy Innisfree My Real Squeeze Mask [HSD 8/2022]</span>
+                                        <p>29,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                                <div class="sp_evaluate sp_evaluate-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/AVA-100x100.jpg">
+
+                                    <div class="product-item-content">
+                                        <span>Mặt Nạ Giấy The Face Shop Real Nature Mask Sheet - 20g</span>
+                                        <p>30,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                                <div class="sp_evaluate sp_evaluate-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="./img2/INSC56-100x100.jpg">
+
+                                    <div class="product-item-content">
+                                        <span>Bộ Dưỡng Da Dùng Thử Innisfree Trà Xanh Green Tea Special Kit EX Set (4
+                                            Sản
+                                            Phẩm)</span>
+                                        <p>329,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                                <div class="sp_evaluate sp_evaluate-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img
+                                        src="./img2/son-thoi-collagen-the-face-shop-collagen-ampoule-lipstick-100x100.jpg">
+
+                                    <div class="product-item-content">
+                                        <span>[HSD 9/2022]Chì Kẻ Mày Innisfree Auto Eyebrow Pencil (Phiên bản mới
+                                            2019)</span>
+                                        <p>100,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                                <div class="sp_evaluate sp_evaluate-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img
+                                        src="./img2/Bo-San-Pham-Duong-da-chong-lao-hoa-face-shop-YEHWADAM-HWANSAENGGO-CREAM-1-500x500.jpg">
+
+                                    <div class="product-item-content">
+                                        <span>Sữa Rửa Mặt Trà Xanh Innisfree Green Tea Cleansing Foam 150ml</span>
+                                        <p>240,000 đ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                                <div class="sp_evaluate sp_evaluate-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="joural-lotion">
+                    <div class="lotion-title">SẢN PHẨM MUA CÙNG</div>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="./img2/mat-na-innisfree-my-real-squeeze-mask-1-100x100.jpg">
+
+                                <div class="product-item-content">
+                                    <span>Mặt Nạ Giấy Innisfree My Real Squeeze Mask [HSD 8/2022]</span>
+                                    <p>29,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="./img2/Mat-Na-Giay-The-Face-Shop-Real-Nature-Mask-Sheet-100x100.jpg">
+
+                                <div class="product-item-content">
+                                    <span>Mặt Nạ Giấy The Face Shop Real Nature Mask Sheet - 20g</span>
+                                    <p>30,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="./img2/Innisfree-triple-shield-2020-3-100x100.jpg">
+
+                                <div class="product-item-content">
+                                    <span>Bộ Dưỡng Da Dùng Thử Innisfree Trà Xanh Green Tea Special Kit EX Set (4 Sản
+                                        Phẩm)</span>
+                                    <p>329,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="./img2/The-Face-Shop-Design-My-Eyebrow-14-100x100.jfif">
+
+                                <div class="product-item-content">
+                                    <span>[HSD 9/2022]Chì Kẻ Mày Innisfree Auto Eyebrow Pencil (Phiên bản mới
+                                        2019)</span>
+                                    <p>100,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="./img2/LNCC06-100x100.jpg">
+
+                                <div class="product-item-content">
+                                    <span>Sữa Rửa Mặt Trà Xanh Innisfree Green Tea Cleansing Foam 150ml</span>
+                                    <p>240,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img
+                                    src="./img2/son-thoi-collagen-the-face-shop-collagen-ampoule-lipstick-100x100 (1).jpg">
+
+                                <div class="product-item-content">
+                                    <span>Chì Kẻ Mày 2 Đầu The Face Shop Designing Eyebrow Pencil</span>
+                                    <p>150,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img
+                                    src="./img2/mat-na-giay-cham-soc-da-toan-dien-foodaholic-essential-mask-23g-1-100x100.jpg">
+
+                                <div class="product-item-content">
+                                    <span>Mặt Nạ Ngủ Dưỡng Ẩm Môi Và Phục Hồi Môi Thâm Laneige Special Care Lip Sleeping
+                                        Mask 3g (Dùng Thử)</span>
+                                    <p>90,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="./img2/son-duong-co-mau-tint-glow-fmgt-3-100x100.jpg">
+
+                                <div class="product-item-content">
+                                    <span>Mặt Nạ Innisfree Capsule Recipe Pack 10ml</span>
+                                    <p>60,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img
+                                    src="./img2/kem-duong-innisfree-jeju-cherry-blossom-tone-up-cream-50ml-1-1-100x100.jpg">
+
+                                <div class="product-item-content">
+                                    <span>Gel Hút Mụn Cám Và Mụn Đầu Đen Chiết Xuất Than Tre Hoạt Tính Ngân Bình
+                                        50g</span>
+                                    <p>75,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="./img2/Innisfree-Green-Tea-Cleansing-Foam-100x100.jpg">
+
+                                <div class="product-item-content">
+                                    <span>Sữa Rửa Mặt Innisfree Jeju Volcanic Pore Cleansing Foam 150ml</span>
+                                    <p>240,000 đ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                            <div class="sp_evaluate sp_evaluate-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div id="content">
+                <div class="promotion_title-sale">Bộ Sản Phẩm Khuyến Mãi Tháng</div>
+                <div class="content-image">
+                    <img src="https://www.kosmebox.com/image/data/banner2021/banner-sale-cuoi-nam/1424x400KV-BOX.jpg">
+                </div>
+
+                <div class="wrap">
+                    <div class="wrap-left">
+                        <select>
+                            <!-- <option>--Chọn danh mục-- </option> -->
+                            <option>Bộ Sản Phẩm Khuyến Mại Tháng</option>
+                            <option>Má Hồng Blusher</option>
+                            <option>Kem Che Khuyết Điểm Mặt - Face </option>
+                            <option> Phấn Tạo Khối - Highlighter</option>
+                        </select>
+                    </div>
+
+                    <div class="wrap-right">
+                        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                        <p>Lọc giá từ 0 đ đến 4,000,000 đ</p>
+                    </div>
+                    <button>LỌC</button>
+
+                </div>
+
+                <div class="promotion-list">
+                    <div class="promotion-list-header">
+                        <div class="icon">
+                            <i class="ti-layout-grid4"></i>
+                            <i class="ti-view-list-alt"></i>
+                        </div>
+
+                        <div class="arrange">
+                            <div class="arrange-left">Sắp xếp theo :
+                                <select>
+                                    <option>Mặc định</option>
+                                    <option>Tên(A - Z)</option>
+                                </select>
+                            </div>
+
+                            <div class="arrange-right">Hiển thị :
+                                <select>
+                                    <option>20</option>
+                                    <option>25</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <container class="loc">
+                        <div class="loc_sp boduong">
+                            <div class="promotion-list-items">
+                                <div class="promotion-item">
+                                    <a href="./detail.html"> <img
+                                            src="./img2/Bo-San-Pham-Duong-da-chong-lao-hoa-face-shop-YEHWADAM-HWANSAENGGO-CREAM-1-100x100.jpg"></a>
+                                    <div class="sp_evaluate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="list-detail">
+                                        <span>Bộ Dưỡng Da Chống Lão Hóa The Face Shop Yehwadam Hwansaenggo Cream Gift
+                                            Set</span>
+                                        <p>1,779,000 đ</p>
+                                    </div>
+
+                                    <i onclick="addCart(this)"
+                                        class="promotion-icon fa-solid fa-bag-shopping icon_cart-sp"></i>
+
+                                </div>
+                                <div class="promotion-item">
+                                    <a href="#"> <img
+                                            src="./img2/innisfree-green-tea-balancing-bo-duong-tra-xanh-danh-cho-hon-hop-25-500x500.jpg"></a>
+                                    <div class="sp_evaluate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="list-detail">
+                                        <span>Bộ Dưỡng Da Innisfree Trà Xanh Green Tea Balancing Ex (4 Sản Phẩm)</span>
+                                        <p>1,709,000 đ</p>
+                                    </div>
+
+                                    <i onclick="addCart(this)"
+                                        class=" promotion-icon fa-solid fa-bag-shopping icon_cart-sp"></i>
+
+                                </div>
+                                <div class="promotion-item">
+                                    <a href="#"> <img
+                                            src="./img2/bo-duong-trang-da-va-tri-tham-nam-the-face-shop-white-seed-brightening-set-500x500.jpg"></a>
+                                    <div class="sp_evaluate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="list-detail">
+                                        <span>Bộ Dưỡng Trắng Da Và Trị Thâm Nám The Face Shop White Seed Brightening Set
+                                            (4
+                                            Sản
+                                            Phẩm)</span>
+                                        <p>3,419,000 đ</p>
+                                    </div>
+
+                                    <i onclick="addCart(this)"
+                                        class="promotion-icon fa-solid fa-bag-shopping icon_cart-sp"></i>
+
+                                </div>
+                                <div class="promotion-item">
+                                    <a href="#"> <img src="./img2/bo-duong-some-by-me-set-3-500x500.jpg"></a>
+                                    <div class="sp_evaluate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="list-detail">
+                                        <span>Bộ Dưỡng Trị Mụn Some By Mi AHA- BHA-PHA 30 Days Miracle Set (3 Sản
+                                            Phẩm)</span>
+                                        <p>2,390,000 đ</p>
+                                    </div>
+
+                                    <i onclick="addCart(this)"
+                                        class="promotion-icon fa-solid fa-bag-shopping icon_cart-sp"></i>
+
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="promotion-list-items">
+                                <div class="promotion-item promotion-item_box">
+                                    <a href="#"> <img
+                                            src="./img2/some-by-meaha-bha-pha-30-days-miracle-set-16-500x500.jpg"></a>
+                                    <div class="sp_evaluate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="list-detail">
+                                        <span>Bộ Dưỡng Trị Mụn Some By Mi AHA- BHA-PHA 30 Days Miracle Set (4 Sản
+                                            Phẩm)</span>
+                                        <p>2,850,000 đ</p>
+                                    </div>
+
+                                    <i onclick="addCart(this)"
+                                        class="promotion-icon fa-solid fa-bag-shopping icon_cart-sp"></i>
+
+                                </div>
+                                <div class="promotion-item promotion-item_box">
+                                    <a href="#"><img src="./img2/The Face Shop Clean Face Mild Set06-500x500.png"></a>
+                                    <div class="sp_evaluate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="list-detail">
+                                        <span>Bộ Dưỡng Trị Mụn The Face Shop Clean Face Mild Set (2 Sản Phẩm)</span>
+                                        <p>778,000 đ</p>
+                                    </div>
+
+                                    <i onclick="addCart(this)"
+                                        class=" promotion-icon fa-solid fa-bag-shopping icon_cart-sp"></i>
+
+                                </div>
+                                <div class="promotion-item promotion-item_box">
+                                    <a href="#"> <img
+                                            src="./img2/some-by-mi-snail-truecica-miracle-repair-starter-kit-3-500x500.jpg"></a>
+                                    <div></div>
+                                    <div class="list-detail">
+                                        <span>Bộ Kit Phục Hồi, Tái Tạo Da Ốc Sên Some By Mi Snail Truecica Miracle
+                                            Repair
+                                            Starter Kit (4 Sản Phẩm)</span>
+                                        <p>600,000 đ</p>
+                                    </div>
+
+                                    <i onclick="addCart(this)"
+                                        class="promotion-icon fa-solid fa-bag-shopping icon_cart-sp"></i>
+                                </div>
+                                <div class="promotion-item promotion-item_box sp_buy_notification">
+                                    <a href="#"> <img
+                                            src="./img2/bo-duong-trang-da-se-khit-lo-chan-long-innisfree-brightening-pore-set-4-san-pham-10-500x500.jpg"></a>
+
+                                    <div class="list-detail">
+                                        <span>Bộ Dưỡng Trắng Da, Se Khít Lỗ Chân Lông Innisfree Brightening Pore Set (4
+                                            Sản
+                                            Phẩm)</span>
+                                        <p>2,500,000 đ</p>
+                                    </div>
+
+                                    <div class="promotion-icon">
+                                        <i class="icon_shopping fa-solid fa-bag-shopping icon_cart-sp"></i>
+                                    </div>
+                                    <button class="buy_notification">
+                                        <span>Thông báo khi có hàng</span>
+                                    </button>
+                                    <div class="time_day">
+                                        <span>2 - 3 NGÀY</span>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+                        <!-- ////////////sp ma hong  -->
+
+                </div>
+                </container>
+                <!-- //////////////////// -->
+
+                <div class="promotion-list-bottom">
+                    <span>Hiển thị 1 đến 8 trong tổng số 8 (1 Trang)</span>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="footer">
+        <container>
+            <div class="footer_content nav-top">
+                <div style="    margin: 30px 0  60px 0;">
+                    <div class="footer_content-text">
+                        <div class="general">
+                            <h3>THÔNG TIN CHUNG</h3>
+                            <ul>
+                                <li><a href="#">Về Chúng Tôi</a></li>
+                                <li><a href="#">Chính Sách Riêng Tư</a></li>
+                                <li><a href="#">Điều khoản và điều kiện</a></li>
+                                <li><a href="#">Câu hỏi thường gặp</a></li>
+                                <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                                <li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+                                <li><a href="#">Chính sách thanh toán</a></li>
+                                <li><a href="#">Chính Sách Giao, Nhận Hàng Và Kiểm Hàng</a></li>
+                            </ul>
+                            <img width="222px" height="84px" src="https://www.kosmebox.com/image/bocongthuong.png">
+                        </div>
+
+                        <div class="general">
+                            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                            <ul>
+                                <li><a href="#">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="general care">
+                            <h3>CÁC THÔNG TIN KHÁC</h3>
+                            <ul>
+                                <li><a href="#">Thương Hiệu</a></li>
+                                <li><a href="#">Khuyến Mãi</a></li>
+                                <li><a href="#">Bí Quyết Làm Đẹp</a></li>
+                            </ul>
+                        </div>
+
+                        <div class=" general ASIALFT">
+                            <h3>THÔNG TIN</h3>
+                            <strong class="company">CÔNG TY TNHH ASIALFT</strong>
+                            <p><span>Địa Chỉ: </span>96 Phạm Thị Tánh, Phường 4, Quận 8, Thành phố Hồ Chí Minh, Việt
+                                Nam
+                            </p>
+                            <p><span>Hotline: </span>(+84) 775750185 - (+84) 778871783</p>
+                            <p><span>Email: </span> info@kosmebox.com</p>
+                            <p><span>GPKD:</span> 0315476762 do Sở Kế hoạch và Đầu tư thành phố Hồ Chí Minh cấp ngày
+                                14
+                                tháng 01 năm 2019 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </container>
+        <container>
+            <div class="ltd">
+                <div class="ltd_footer nav-top">
+                    Bản quyền thuộc về Kosmebox Pte. Ltd.
+                </div>
+            </div>
+        </container>
+    </div>
+    <div class="mobile">
+        <div class="mobile-items">
+            <div class="mobile-contact">
+                <div class="mobile-img">
+                    <img src=" https://www.kosmebox.com/catalog/view/theme/mobile/images/chat_new.png" alt="">
+                </div>
+                <div class="catavlog">
+                    <div class="catavlog_items">
+                        <a href="#"><img src="	https://www.kosmebox.com/catalog/view/theme/mobile/images/mess.png
+                        " alt=""></a>
+                        <a href="#"><img src="	https://www.kosmebox.com/catalog/view/theme/mobile/images/phone_call.png
+                        " alt=""></a>
+                        <a style="margin: 0;" href="#"><img src="	https://www.kosmebox.com/catalog/view/theme/mobile/images/zalo.png
+                        " alt=""></a>
+                    </div>
+                </div>
+                <div class="catavlog_up">
+                    <i class="icon_up fa-regular fa-circle-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="notification">
+        <div class="notification_content">
+            <div class="notification-contact">
+                <div class="notification-img">
+                    <img src="	https://api.mepuzz.com/app-assets/images/bell-icon.png" alt="">
+                </div>
+                <div class="notification_number">
+                    3
+                </div>
+                <div class="notification_sp">
+                    <div class="promotion_tb">
+                        <div class="promotion_title">
+                            <span>Khuyến mại tuần này!!! </span>
+                            <i class="icon_hide fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="promotion_content">
+                            <div class="promotion_content-items">
+                                <div class="promotion_img">
+                                    <img src="https://i.ibb.co/wSfwV1k/e5062f734ecb.png" alt="">
+                                </div>
+                                <div class="promotion_text-sale">
+                                    <p class="promotion_text-title">Săn Deal Mỹ Phẩm Enesti Hàng Đầu Xứ Chung-Ju!!!!
+                                    </p>
+                                    <p class="promotion_text-saleup">Sale up to 23% - Mua liền tay >>></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promotion_content">
+                            <div class="promotion_content-items">
+                                <div class="promotion_img">
+                                    <img src="	https://i.ibb.co/W2KT4pG/74e448cb0e80.jpg" alt="">
+                                </div>
+                                <div class="promotion_text-sale">
+                                    <p class="promotion_text-title">🔥 ĐẬP HỘN XỊN- NÀNG THÊM XINH 🔥</p>
+                                    <p class="promotion_text-saleup">Tặng kèm 10 quà tặng hấp dẫn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promotion_content">
+                            <div class="promotion_content-items">
+                                <div class="promotion_img">
+                                    <img src="https://i.ibb.co/Gcr4P27/8aeb5b4c6bd3.jpg" alt="">
+                                </div>
+                                <div class="promotion_text-sale">
+                                    <p class="promotion_text-title">Mỹ Phẩm Lime chính hãng</p>
+                                    <p class="promotion_text-saleup">Sale khủng 50% - thỏa sức mua - không lo về giá
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toast-container">
+        <div class="toast_content">
+            <div class="toast_title">
+                <i class="icon_tick fa-solid fa-check"></i>
+                Sản phẩm đã được thêm vào giỏ hàng
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./home.js"></script>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
